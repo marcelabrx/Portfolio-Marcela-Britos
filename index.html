@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido a mi sitio web, soy Desarrolladora Frontend y estudiante de Comercio Internacional, prestadora de servicios de maquetado y estilado de tu próxima pagina web en un corto plazo">
+    <meta name="keywords" content="desarrollo frontend, maquetado, sitio web, HTML, CSS, javascript, saas, git, github, react">
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--link google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&;display=swap" rel="stylesheet" preload="">
+    <!--link para iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&;display=swap" rel="stylesheet" preload="">
+    <!--link de font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--link de favicon-->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Marcela Britos</title>
+    <link rel="icon" href="./img/my_img.ico">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav class="nav_header">
+            <ul class="nav_ul">
+                <li><a href="#about">HOLA</a></li>
+                <li><a href="#skills">CONOCIMIENTOS</a></li>
+                <li><a href="#projects">PROYECTOS</a></li>
+                <li class="nav_contact"><a href="#contact" role="button">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main-->
+    <main>
+        <!----Section Presentation---->
+        <section class="presentation general_padding" id="about" aria-label="presentation section">
+            <article class="presentation_hola">
+                <p class="presentation_saludo">¡Hola! Soy</p>
+                <h1 class="presentation_name">Marcela Britos</h1>
+                <p class="presentation_description">Estudiante de Comercio Internacional y Desarrolladora Frontend</p> 
+                <a href="#projects" role="button" class="presentation_button">Lo que hago</a>  
+            </article>
+            <figure id="back_img" class="presentation_img">
+                <img src="./img/imagen_saludo.svg" alt="imagen de una mujer programando">
+            </figure>
+        </section>
+        <!----Section Skills---->
+        <section id="skills" class="general_padding">
+            <!----Skills-"My_Skills---->  
+            <article class="my_skills">
+                <h2>Mis Conocimientos</h2>
+                <p>Estas son las herramientas de programación que utilizo para trabajar</p>
+            </article>
+            <!----Skills-HTML---->    
+            <article class="skills_figures">
+                <figure class="skills_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html"/>
+                    <figcaption>
+                        HTML
+                    </figcaption>
+                </figure>
+                <!----Skills-CSS---->  
+                <figure class="skills_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css"/>
+                    <figcaption>
+                        CSS3
+                    </figcaption>
+                </figure>
+                <!----Skill-Saas---->  
+                <figure class="skills_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass"/>
+                    <figcaption>
+                        Saas
+                    </figcaption>
+                </figure>
+                <!----Skill-JavaScript---->  
+                <figure class="skills_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="javascript"/>
+                    <figcaption>
+                        JavaScript
+                    </figcaption>
+                </figure>
+                <!----Skill-React---->  
+                <figure class="skills_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react"/>
+                    <figcaption>
+                        React
+                    </figcaption>
+                </figure>
+                <!----Skill-Git---->
+                <figure class="skills_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git"/>
+                    <figcaption>
+                        Git
+                    </figcaption>
+                </figure>
+            </article> 
+        </section>
+        <!----Section Quote---->
+        <section class="quote_container">
+            <i class="fa-solid fa-quote-right"></i>
+            <blockquote cite="#">
+                <p>Aprendí que no se puede dar marcha atrás, que la esencia de la vida es ir hacia adelante. La vida, en realidad, es una calle de sentido único.</p>
+                <h3>Agatha Christie</h3>
+            </blockquote>
+        </section>
+        <!----Section projects---->
+        <section id="projects" class="general_padding">
+            <!----projects-Title---->
+            <section class="projects_title">
+                <h2>Mis Proyectos</h2>
+                <p>Estos son los proyectos que realicé a lo largo de mi formación como desarrolladora</p>
+            </section>
+            <!----projects-Container---->
+            <section class="projects_container">
+                <!----projects-Portfolio---->
+                <article class="project_card">
+                    <a href="#" target="_blank">
+                        <figure>
+                            <img src="./img/portfolio.svg" alt="Portfolio">
+                            <figcaption>Portfolio</figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <!----projects-Generador de memes---->
+                <article class="project_card">
+                    <a href="#" target="_blank">
+                        <figure>
+                            <img src="./img/generador_memes.svg" alt="Generador de memes">
+                            <figcaption>Generador de memes</figcaption>
+                        </figure>
+                    </a> 
+                </article> 
+                <!----projects-Match 3---->
+                <article class="project_card">
+                    <a href="#" target="_blank">
+                        <figure>
+                            <img src="./img/match_3.svg" alt="Match 3">
+                            <figcaption>Match 3</figcaption>
+                        </figure>
+                    </a>
+                </article> 
+                <!----projects-Generador de Gastos---->
+                <article class="project_card">
+                    <a href="#" target="_blank">
+                        <figure>
+                            <img src="./img/controlador_gastos.svg" alt="Controlador de gastos">
+                            <figcaption>Controlador de gastos</figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <!----projects-Admin. de reuniones----> 
+                <article class="project_card">
+                    <a href="#" target="_blank">
+                        <figure>
+                            <img src="./img/administrador_reuniones.svg" alt="Administrador de reuniones">
+                            <figcaption>Administrador de reuniones</figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <!----projects-Todo app----> 
+                <article class="project_card">
+                    <a href="#" target="_blank">
+                        <figure>
+                            <img src="./img/todo_list.svg" alt="Todo app">
+                            <figcaption>Todo app</figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <!----projects-Buscador de peliculas----> 
+                <article class="project_card">
+                    <a href="#" target="_blank">
+                        <figure>
+                            <img src="./img/buscador_peliculas.svg" alt="Buscador de películas">
+                            <figcaption>
+                                Buscador de películas
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </section>
+        </section>
+        <!----Section Contact---->
+        <section id="contact">
+            <section class="contact_container">
+                <section class="contact_left">
+                    <article class="contact_title">
+                        <h2 class="contact_left_title">Contáctame</h2>
+                        <p>En caso de estar interesado/a en mis trabajos puedes contactarme por mis redes o dejarme un mensaje en la sección "Escríbeme".</p>
+                    </article>
+                    <article id="contact_conteiner">
+                        <ul class="contact_ul">
+                            <li>
+                                <a href="https://github.com/marcelabrx" target="_blank">
+                                    <figure class="contact_icon">
+                                        <i class="fa-brands fa-github-alt" aria-hidden="true"></i>
+                                        <figcaption>Marcela Britos</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/marcelabritos/" target="_blank">
+                                    <figure class="contact_icon">
+                                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                        <figcaption>marcelabritos</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:marcelal.britos@gmail.com" target="_blank">
+                                    <figure class="contact_icon">
+                                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                        <figcaption>marcelal.britos@gmail.com</figcaption> 
+                                    </figure> 
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="contact_right">
+                    <h2 class="contact_right_title">Escríbeme</h2>
+                    <form action="https://formsubmit.co/marcelal.britos@gmail.com" method="POST" >
+                        <section class="form_file">
+                            <fieldset id="form_tag" class="name_file">
+                                <label for="firstname">Nombre *</label>
+                                <input type="text" name="name" placeholder="p. ej: Marcela">
+                            </fieldset>
+                            <fieldset id="form_tag" class="lastname_file">
+                                <label for="lastname">Apellido *</label>
+                                <input type="text" name="lastname" placeholder="p. ej: Britos">
+                            </fieldset>
+                        </section>
+                        <section class="form_column">
+                            <fieldset id="form_tag">
+                                <label for="emai">Email *</label>
+                                <input type="email" name="email" placeholder="p. ej: marcelabritos@gmail.com">
+                            </fieldset>
+                            <fieldset id="form_tag">
+                                <label for="message">Mensaje *</label>
+                                <textarea name="Mensaje" id="message"  cols="30" rows="10" placeholder="Escriba un mensaje aquí" class="input_msj"></textarea>
+                            </fieldset>
+                            <button type="submit" class="form_button">Enviar</button>
+                        </section>
+                    </form>
+                </section>
+            </section> 
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <nav class="navbar_footer">
+            <ul class="navbar_footer_ul">
+                <li class="navbar_footer_ul_li"><a href="#about">HOLA</a></li>
+                <li class="navbar_footer_ul_li"><a href="#skills">CONOCIMIENTOS</a></li>
+                <li class="navbar_footer_ul_li"><a href="#projects">PROYECTOS</a></li>
+                <li class="navbar_footer_ul_li"><a href="#contact">CONTACTO</a></li>
+            </ul>
+            <ul class="navbar_footer_redes">
+                <li>
+                    <a href="https://github.com/marcelabrx" target="_blank"><i class="fa-brands fa-github-alt" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/marcelabritos/" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:marcelalbritos@gmail.com" target="_blank"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <p class="footer-copy">Hecho con ❤ por Marcela</p>
+        </nav>
+    </footer>  
+</body>
+</html>

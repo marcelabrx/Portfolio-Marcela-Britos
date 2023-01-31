@@ -12,6 +12,7 @@
     --lightGrey: #f6f7fb;
     --backWhite: #ffff;
     --mediumViolet: #7d04f6;
+    --lightViolet: #b294d0;
 }
 .general_padding{
     padding: 80px 20px;
@@ -321,6 +322,35 @@ footer{
     background-color: var(--generalColor);
     border: solid 1px white;
 }
+/* ----COMING SOON---- */
+.body_coming{
+    background-color: #deccee;
+}
+.main_coming{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+.main_coming h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;  
+}
+.main_coming * img{
+    width: 300px;
+}
+.box_link{
+   margin-top: 50px;
+}
+.box_link a{
+    padding: 10px;
+    color: var(--generalColor);
+    border: solid 1px #7d04f6;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
 /* ------------ TABLET ------------ */
 @media (min-width:768px) {
     /*--- MAIN ---*/
@@ -596,4 +626,23 @@ footer{
         color: var(--backWhite);
         transition: all 1.5s;
     }
+
+    .main_coming{
+        padding: 100px;
+    }
+    .box_link a{
+        padding: 20px 40px;
+        color: var(--generalColor);
+        border: 3px solid #7d04f6;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: -2px;
+        transition: all 0.5s;
+    }
+    .box_link a:hover {
+        font-weight: 900;
+        letter-spacing: 10px;
+        border: 7px solid var(--generalColor);
+      }
 }   

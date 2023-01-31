@@ -317,7 +317,7 @@ footer{
     font-size: 1.3rem;
     font-style: italic;
 }
-.navbar_footer_redes li:hover i{
+.navbar_footer_redes li:active i{
     color: var(--backWhite);
     background-color: var(--generalColor);
     border: solid 1px white;
@@ -517,7 +517,6 @@ footer{
     }
     .nav_ul * a:hover{
         border: solid 1px #761acc;
-        transform: scale(90deg);
         transition: all 3s;
     }
     .nav_contact a:hover{
@@ -589,7 +588,6 @@ footer{
         -webkit-box-shadow: 9px 10px 10px -1px rgba(118,26,204,0.54);
         -moz-box-shadow: 9px 10px 10px -1px rgba(118,26,204,0.54);
     }
-    
     /*-----Section-Contact-----*/
     #contact{
         background-color: var(--lightGrey);

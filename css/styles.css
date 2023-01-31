@@ -626,7 +626,7 @@ footer{
         color: var(--backWhite);
         transition: all 1.5s;
     }
-
+    /* ----COMING SOON---- */
     .main_coming{
         padding: 100px;
     }
@@ -644,5 +644,5 @@ footer{
         font-weight: 900;
         letter-spacing: 10px;
         border: 7px solid var(--generalColor);
-      }
+    }
 }   

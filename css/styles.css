@@ -9,7 +9,6 @@
 :root{
     --fontColor: #2e2e31;
     --generalColor: #761acc;
-    --lightViolet: #a786c5;
     --lightGrey: #f6f7fb;
     --backWhite: #ffff;
     --mediumViolet: #7d04f6;
@@ -40,7 +39,8 @@ body{
     width: 70vw;
 }
 .presentation_img{
-    margin-top: 30px;
+    margin-top: 50px;
+    padding: 10px;
 }
 .presentation_img img{
     width:80vw;
@@ -75,9 +75,10 @@ body{
 .presentation_description{
     font-size: 1.5rem;
     font-weight: 500;
+    padding: 10px;
 }
 .presentation_button{
-    margin-top: 20px;
+    margin: 20px;
 }
 .presentation_button,
 .form_button{
@@ -120,22 +121,26 @@ body{
 .skills_figures{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    width: 50vw;
+    align-items: center;
     justify-content: center;
+    width: 50vw;
 }
 .skills_card{
-    padding: 20px;
+    padding: 40px;
     margin: 10px;
     background-color: var(--backWhite);
     border-radius: 15px;
     border: 1px solid #dddfe5;
+    width: 80vw;
+    max-width: 300px;
 }
 .skills_card figcaption{
     font-weight: 800;
+    margin-top: 20px;
+    font-size: 1.5rem;
 }
 .skills_card img{
-    width: 50%;
+    width: 50%
 }
 .skills_card:active,
 .project_card:active,
@@ -153,11 +158,12 @@ body{
     text-align: center;
 }
 .quote_container i{
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 800;
 }
 .quote_container p{
     font-size: 1.5rem;
+    padding: 10px;
     margin-bottom: 20px;
 }
 .quote_container h3{
@@ -180,26 +186,26 @@ body{
 .projects_container{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    margin-top: 20px
+    margin-top: 20px;
 }
 .project_card{
     border: 1px solid #dddfe5;
     border-radius: 15px;
     padding: 10px;
     margin: 15px 15px;
-    width: 80vw;
-    max-width: 300px;
 }
 .project_card img{
     width: 230px;
     height: 200px;
+    margin-top: 10px;
 }
 .project_card figcaption{
     font-weight: 800;
     text-align: center;
     padding: 10px;
+    font-size: 1.3rem;
     color: var(--fontColor);
 }
 /*-----Section-Contact-----*/
@@ -248,17 +254,20 @@ fieldset{
 }
 .contact_right * label{
     margin: 10px 0;
-    font-weight: 600; 
+    font-weight: 600;
 }
 .contact_right * input,
 textarea{
     border-radius: 20px;
     background-color: var(--lightGrey);
-    border: 1px solid #f6f7fb;
+    border: 1px solid #c7bbbb;
     font-size: 1.5rem;
     padding: 10px 15px;
     display: block;
     width: 100%;
+}
+textarea{
+    font-family: 'Montserrat', sans-serif;
 }
 .contact_right_title,
 .contact_left_title,
@@ -266,10 +275,10 @@ textarea{
 .form_button{
     margin-bottom: 20px;
 }
-.contact_ul a:hover figcaption{
+.contact_ul a:active figcaption{
     color: var(--generalColor);
 }
-.contact_ul a:hover i{
+.contact_ul a:active i{
     background-color: var(--generalColor);
     color: var(--backWhite);
 }
@@ -295,7 +304,7 @@ footer{
     border-radius: 100%;
     background-color: var(--backWhite);
     color: var(--generalColor);
-    padding: 10px 15px;
+    padding: 15px 15px;
     margin: 5px;
     border: 1px solid #761acc;
     font-size: 2rem;
@@ -328,6 +337,9 @@ footer{
     .presentation_description{
         font-size: 2rem;
         font-weight: 500;
+    }
+    .presentation_img img{
+        width: 60vw;
     }
     .my_skills h2,
     .projects_title h2,
@@ -393,12 +405,6 @@ footer{
     /*-----Section-Contact-----*/
     .contact_container{
         padding: 40px;
-    }
-    .contact_title{
-        width: 50vw;
-    }
-    .contact_left_title{
-        text-align: left;
     }
     .contact_ul{
         display: flex;
@@ -516,7 +522,8 @@ footer{
     }
     .presentation_button:hover,
     .form_button:hover{
-        background-color: var(--lightViolet);
+        background-color: var(--mediumViolet);
+        transition: all 2s;
     }    
     /*-----Section-Skills-----*/
     .skills_figures{
@@ -537,7 +544,7 @@ footer{
     }
     /*-----Section-Quote-----*/
     .quote_container{ 
-        padding: 100px 50px 150px;  
+        padding: 100px 50px;  
     }
     .quote_container * p{
         margin: 50px 0;
@@ -582,9 +589,11 @@ footer{
     }
     .contact_ul a:hover figcaption{
         color: var(--generalColor);
+        transition: all 1.5s;
     }
     .contact_ul a:hover i{
         background-color: var(--generalColor);
         color: var(--backWhite);
+        transition: all 1.5s;
     }
 }   

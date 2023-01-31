@@ -12,6 +12,7 @@
     --lightViolet: #a786c5;
     --lightGrey: #f6f7fb;
     --backWhite: #ffff;
+    --mediumViolet: #7d04f6;
 }
 .general_padding{
     padding: 80px 20px;
@@ -88,9 +89,9 @@ body{
     padding: 10px 15px;
     text-transform: uppercase;
 }
-.presentation_button:hover,
-.form_button:hover{
-    background-color: var(--lightViolet);
+.presentation_button:active,
+.form_button:active{
+    background-color: var(--mediumViolet);
 }
 /*-----Section-Skills-----*/
 #skills{
@@ -136,9 +137,9 @@ body{
 .skills_card img{
     width: 50%;
 }
-.skills_card:hover,
-.project_card:hover,
-.project_card:hover figcaption{
+.skills_card:active,
+.project_card:active,
+.project_card:active figcaption{
     border-color: var(--generalColor);
     color: var(--generalColor);
 }
@@ -513,12 +514,22 @@ footer{
         font-size: 1.7rem;
         padding: 15px 35px;
     }
+    .presentation_button:hover,
+    .form_button:hover{
+        background-color: var(--lightViolet);
+    }    
     /*-----Section-Skills-----*/
     .skills_figures{
         padding: 70px 50px;
     }
     .skills_card{
         width: 20vw;
+    }
+    .skills_card:hover,
+    .project_card:hover,
+    .project_card:hover figcaption{
+        border-color: var(--generalColor);
+        color: var(--generalColor);
     }
     .skills_card:hover{
         transform: scale(1.1);
@@ -568,5 +579,12 @@ footer{
     }
     .contact_right{
         width: 40vw;
+    }
+    .contact_ul a:hover figcaption{
+        color: var(--generalColor);
+    }
+    .contact_ul a:hover i{
+        background-color: var(--generalColor);
+        color: var(--backWhite);
     }
 }   

@@ -11,7 +11,7 @@
     --generalColor: #761acc;
     --lightGrey: #f6f7fb;
     --backWhite: #ffff;
-    --mediumViolet: #7d04f6;
+    --mediumViolet: #8b46d0;
     --lightViolet: #b294d0;
 }
 .general_padding{
@@ -76,16 +76,13 @@ body{
 .presentation_description{
     font-size: 1.5rem;
     font-weight: 500;
-    padding: 10px;
-}
-.presentation_button{
-    margin: 20px;
+    /* padding: 10px; */
 }
 .presentation_button,
 .form_button{
-    border: solid #761acc 1px;
+    border: solid #8b46d0 1px;
     border-radius: 30px;
-    background-color: var(--generalColor);
+    background-color: var(--mediumViolet);
     color: var(--backWhite);
     font-size: 1.5rem;
     padding: 10px 15px;
@@ -93,7 +90,7 @@ body{
 }
 .presentation_button:active,
 .form_button:active{
-    background-color: var(--mediumViolet);
+    background-color: var(--generalColor);
 }
 /*-----Section-Skills-----*/
 #skills{
@@ -172,7 +169,7 @@ body{
     margin-bottom: 20px;
 }
 /*-----Section-projects-----*/
-#projects{
+#projects{ 
     display: flex;
     flex-direction: column;
 }
@@ -198,8 +195,8 @@ body{
     margin: 15px 15px;
 }
 .project_card img{
-    width: 230px;
-    height: 200px;
+    width: 250px;
+    height: 220px;
     margin-top: 10px;
 }
 .project_card figcaption{
@@ -429,7 +426,7 @@ footer{
         max-width: 300px;
     }
     .project_card * img{
-        width: 290px;
+        width: 280px;
         height: 200px;
     } 
     /*-----Section-Contact-----*/
@@ -551,7 +548,7 @@ footer{
     }
     .presentation_button:hover,
     .form_button:hover{
-        background-color: var(--mediumViolet);
+        background-color: var(--generalColor);
         transition: all 2s;
     }    
     /*-----Section-Skills-----*/
@@ -574,6 +571,9 @@ footer{
     /*-----Section-Quote-----*/
     .quote_container{ 
         padding: 100px 50px;  
+    }
+    .quote_container * i{
+        font-size: 150px;
     }
     .quote_container * p{
         margin: 50px 0;
@@ -623,6 +623,12 @@ footer{
         background-color: var(--generalColor);
         color: var(--backWhite);
         transition: all 1.5s;
+    }
+    /*-----Section-Footer-----*/
+    .navbar_footer_redes li:hover i{
+        color: var(--backWhite);
+        background-color: var(--generalColor);
+        border: solid 1px white;
     }
     /* ----COMING SOON---- */
     .main_coming{
